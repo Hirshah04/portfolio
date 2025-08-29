@@ -1,5 +1,6 @@
 // App.js
 import React from 'react';
+import {Route , Routes} from "react-router-dom"
 import './App.css';
 import Navbar from './Components/Navbar';
 import Projects from './Components/Projects';
@@ -11,13 +12,13 @@ import Certificates from './Components/Certificates';
 
 const App = () => (
   <div className="resume-main">
-    <Navbar/>
-    <Header/>
-    <About/>
-    <Projects/>
-    <Education/>
-    <Certificates/>
-    <Skills/>
+    <Navbar />
+    <section id="header"><Header /></section>
+    <section id="about"><About /></section>
+    <section id="projects"><Projects /></section>
+    <section id="education"><Education /></section>
+    <section id="certificates"><Certificates /></section>
+    <section id="skills"><Skills /></section>
   </div>
 );
 
