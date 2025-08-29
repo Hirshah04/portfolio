@@ -10,12 +10,13 @@ const Projects = () => (
   >
     <h3>Projects</h3>
     <ul>
-      <li>✅ Project Management System (Django)</li>
+      <li>✅ Project Management System in Django</li>
       <li>✅ Java Academic Project</li>
       <li>✅ Marksheet Generator in C</li>
       <li>✅ School Management in C++</li>
       <li>✅ HealthPlus in Android App</li>
       <li>✅ Portfolio in React JS</li>
+      <li> Movie Ticket Booking System in Mern (OnGoing)</li>
     </ul>
   </motion.section>
 );
