@@ -21,6 +21,7 @@ const Skills = () => (
       <span>SQL</span>
       <span>React JS</span>
       <span>Django</span>
+      <span>MERN</span>
     </div>
     <h3>Soft Skills</h3>
     <div className="skills-tags">

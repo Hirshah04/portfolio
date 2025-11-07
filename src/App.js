@@ -17,7 +17,6 @@ const App = () => (
     <section id="about"><About /></section>
     <section id="projects"><Projects /></section>
     <section id="education"><Education /></section>
-    <section id="certificates"><Certificates /></section>
     <section id="skills"><Skills /></section>
   </div>
 );
