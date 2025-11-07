@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <motion.nav
       className="navbar"
@@ -11,7 +13,17 @@ const Navbar = () => {
     >
       <div className="navbar-logo">My Portfolio</div>
 
-      <div className="navbar-links">
+      <button
+        className={`nav-toggle ${open ? 'open' : ''}`}
+        aria-label="Toggle navigation"
+        onClick={() => setOpen((s) => !s)}
+      >
+        <span />
+        <span />
+        <span />
+      </button>
+
+      <div className={`navbar-links ${open ? 'open' : ''}`} onClick={() => setOpen(false)}>
         <a href="#header" className="nav-link">Home</a>
         <a href="#about" className="nav-link">About</a>
         <a href="#projects" className="nav-link">Projects</a>

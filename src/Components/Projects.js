@@ -1,6 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+const projectList = [
+  'Project Management System in Django',
+  'Java Academic Project',
+  'Marksheet Generator in C',
+  'School Management in C++',
+  'HealthPlus Android App',
+  'Portfolio in React JS',
+  'Movie Ticket Booking System in MERN (OnGoing)'
+];
+
 const Projects = () => (
   <motion.section
     initial={{ opacity: 0, x: 40 }}
@@ -9,15 +19,12 @@ const Projects = () => (
     className="projects-section"
   >
     <h3>Projects</h3>
-    <ul>
-      <li>✅ Project Management System in Django</li>
-      <li>✅ Java Academic Project</li>
-      <li>✅ Marksheet Generator in C</li>
-      <li>✅ School Management in C++</li>
-      <li>✅ HealthPlus in Android App</li>
-      <li>✅ Portfolio in React JS</li>
-      <li> Movie Ticket Booking System in Mern (OnGoing)</li>
-    </ul>
+
+    <div className="projects-grid">
+      {projectList.map((p, i) => (
+        <div key={i} className="project-card">✅ {p}</div>
+      ))}
+    </div>
   </motion.section>
 );
 
